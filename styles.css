@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Horizontal layout*/
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+/* Page 1*/
+.one {
+  z-index: -1;
+  background: url(Untitled.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.showcase {
+  max-width: 500px;
+  height: auto;
+  margin: 150px auto;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-left: 1px solid black;
+  z-index: 1;
+}
+
+.showcase h3 {
+  color: #ffff;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+.showcase h1 {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+span {
+  color: #ffff;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.big {
+  margin-top: 10px;
+  padding: 8px;
+}
+
+.showcase p {
+  margin-bottom: 20px;
+}
+
+.showcase a {
+  color: #ffff;
+  text-decoration: none;
+  background-color: #2f2e41;
+  margin-top: 20px;
+  padding: 8px 15px;
+  border-radius: 15px;
+}
+
+.showcase a:hover {
+  color: black;
+  background: #ffff;
+}
+
+/* Page 2*/
+.two {
+  background: url(bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 200px auto;
+}
+
+.image {
+  flex: 1;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h1 {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+/* Page 3*/
+.three {
+  background: url(bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 500px;
+  height: auto;
+}
+
+.frame {
+  border: 2px solid #ffff;
+  margin: 15px auto;
+}
+
+.content a {
+  text-decoration: none;
+  color: #fff;
+  background: #2f2e41;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 10px;
+  border-radius: 15px;
+}
+
+.content a:hover {
+  color: black;
+  background: #ffff;
+}
+
+.content {
+  line-height: 1.3em;
+}
+
+/* Page 4*/
+.four {
+  background: url(bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  max-width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.image-contact {
+  max-width: 700px;
+  height: auto;
+}
+
+.get-in-touch {
+  max-width: 700px;
+  height: auto;
+  padding-top: 40px;
+}
+
+.get-in-touch h1 {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5em;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.get-in-touch p {
+  font-size: 20px;
+}
+
+.get-in-touch .big {
+  font-size: 24px;
+}
+
+/* Outer Wrapper */
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Media Qeuries */
+
+@media screen and (min-width: 500px) {
+  .about {
+    flex-direction: row;
+  }
+
+  .image {
+    width: 300px;
+    height: auto;
+  }
+
+  .info {
+    padding: 100px 20px;
+    width: 300px;
+    height: auto;
+  }
+
+  .skills {
+    margin-top: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .box {
+    width: 250px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 10px 10px 5px 10px #acabab42;
+    border-radius: 20px;
+  }
+
+  .frame {
+    border: none;
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+
+  .image-contact {
+    max-width: 500px;
+  }
+}
